@@ -76,7 +76,9 @@ export function About() {
           </div>
 
           <div className="lg:col-span-6 bg-surface-container-low p-6 lg:p-8 rounded-2xl shadow-xl">
-            <h3 className="font-mono-code text-label-caps text-secondary uppercase block mb-6">FOUNDATIONAL MILESTONES</h3>
+            <h3 className="font-mono-code text-label-caps text-secondary uppercase block mb-6">
+              FOUNDATIONAL MILESTONES
+            </h3>
             <ol className="space-y-6 relative before:absolute before:inset-0 before:left-3.5 before:w-0.5 before:bg-outline-variant/40">
               {milestones.map((milestone) => (
                 <li key={milestone.step} className="relative flex items-start gap-4">

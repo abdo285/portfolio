@@ -92,7 +92,11 @@ const categories = [
 
 export function Expertise() {
   return (
-    <section aria-labelledby="expertise-title" className="w-full bg-surface-container-lowest py-20 lg:py-28" id="expertise">
+    <section
+      aria-labelledby="expertise-title"
+      className="w-full bg-surface-container-lowest py-20 lg:py-28"
+      id="expertise"
+    >
       <Container>
         <SectionHeading
           id="expertise-title"

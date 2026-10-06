@@ -7,6 +7,8 @@ const links = [
   { label: 'Email', icon: 'mail', href: `mailto:${site.footerEmail}`, external: false },
 ]
 
+const year = new Date().getFullYear()
+
 export function SiteFooter() {
   return (
     <footer className="w-full bg-surface-container-lowest border-t border-outline-variant/20 py-space-xl">
@@ -20,7 +22,7 @@ export function SiteFooter() {
             <span className="font-mono-code text-mono-code text-on-surface-variant">{site.role}</span>
           </div>
           <p className="font-mono-code text-mono-code text-outline">
-            © {new Date().getFullYear()} {site.name} · Engineered for business impact
+            © {year} {site.name} · Engineered for business impact
           </p>
         </div>
         <nav aria-label="Social" className="flex items-center gap-space-lg">

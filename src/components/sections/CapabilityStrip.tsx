@@ -45,8 +45,7 @@ export function CapabilityStrip() {
               <Fragment key={metric.label}>
                 {index > 0 && <div aria-hidden="true" className="h-8 w-px bg-outline-variant" />}
                 <div>
-                  <span className={`font-mono-metric block ${metric.valueClass}`}>{metric.value}</span>{' '}
-                  {metric.label}
+                  <span className={`font-mono-metric block ${metric.valueClass}`}>{metric.value}</span> {metric.label}
                 </div>
               </Fragment>
             ))}

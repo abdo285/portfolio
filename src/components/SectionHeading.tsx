@@ -10,12 +10,7 @@ const eyebrowColor: Record<Accent, string> = {
 
 export function Eyebrow({ accent = 'primary', children }: { accent?: Accent; children: ReactNode }) {
   return (
-    <span
-      className={cx(
-        'font-mono-code text-label-caps uppercase tracking-widest block mb-2',
-        eyebrowColor[accent],
-      )}
-    >
+    <span className={cx('font-mono-code text-label-caps uppercase tracking-widest block mb-2', eyebrowColor[accent])}>
       {children}
     </span>
   )

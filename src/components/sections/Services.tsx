@@ -22,7 +22,11 @@ const services = [
     iconWrap: 'bg-tertiary/10 text-tertiary',
     title: 'B2B E-Commerce & Customer Portals',
     body: 'High-security self-service client portals, wholesale pricing matrices, automated billing triggers, and seamless payment gateway integrations designed for uninterrupted revenue flows.',
-    points: ['Custom tiered wholesale pricing', 'Automated invoice & PDF generation', 'Self-service account dashboards'],
+    points: [
+      'Custom tiered wholesale pricing',
+      'Automated invoice & PDF generation',
+      'Self-service account dashboards',
+    ],
   },
   {
     icon: 'sync',

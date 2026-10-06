@@ -55,7 +55,12 @@ async function deliver(payload: Record<string, string>) {
   }
 
   const subject = `Portfolio inquiry from ${payload.name}`
-  const body = [`Type: ${payload.projectTypes || 'Not specified'}`, `From: ${payload.name} <${payload.email}>`, '', payload.message].join('\n')
+  const body = [
+    `Type: ${payload.projectTypes || 'Not specified'}`,
+    `From: ${payload.name} <${payload.email}>`,
+    '',
+    payload.message,
+  ].join('\n')
   window.location.href = `mailto:${site.contactEmail}?subject=${encodeURIComponent(subject)}&body=${encodeURIComponent(body)}`
 }
 
@@ -172,8 +177,7 @@ function InquiryForm() {
           status !== 'success' && status !== 'error' && 'hidden',
         )}
       >
-        {status === 'success' &&
-          '✓ Message dispatched! Thank you for reaching out. I will respond within 24 hours.'}
+        {status === 'success' && '✓ Message dispatched! Thank you for reaching out. I will respond within 24 hours.'}
         {status === 'error' && `Something went wrong sending your message. Please email ${site.contactEmail} directly.`}
       </div>
     </form>
@@ -193,7 +197,10 @@ export function Contact() {
             <div className="lg:col-span-5 flex flex-col justify-between">
               <div>
                 <Eyebrow>INITIATE CONTACT</Eyebrow>
-                <h2 id="contact-title" className="font-headline-lg text-headline-lg text-on-surface tracking-tight mb-4">
+                <h2
+                  id="contact-title"
+                  className="font-headline-lg text-headline-lg text-on-surface tracking-tight mb-4"
+                >
                   Have a project or opportunity in mind?
                 </h2>
                 <p className="font-body-md text-body-md text-on-surface-variant mb-8 leading-relaxed">

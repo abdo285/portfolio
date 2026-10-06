@@ -16,13 +16,36 @@ const flagshipFeatures = [
 const flagshipStack = ['.NET 8 Web API', 'Angular 18', 'SQL Server', 'EF Core', 'Redis', 'SignalR']
 
 const kpis = [
-  { label: 'Monthly Flow Rate', value: '$418,920', valueClass: 'text-on-surface', note: '↑ 18.4% vs last period', noteClass: 'text-secondary' },
-  { label: 'Open Dispatches', value: '1,429 Units', valueClass: 'text-primary', note: '3 Warehouses Live', noteClass: 'text-on-surface-variant' },
-  { label: 'Queue Latency', value: '1.2 hrs', valueClass: 'text-secondary', note: '-68% improvement', noteClass: 'text-secondary' },
+  {
+    label: 'Monthly Flow Rate',
+    value: '$418,920',
+    valueClass: 'text-on-surface',
+    note: '↑ 18.4% vs last period',
+    noteClass: 'text-secondary',
+  },
+  {
+    label: 'Open Dispatches',
+    value: '1,429 Units',
+    valueClass: 'text-primary',
+    note: '3 Warehouses Live',
+    noteClass: 'text-on-surface-variant',
+  },
+  {
+    label: 'Queue Latency',
+    value: '1.2 hrs',
+    valueClass: 'text-secondary',
+    note: '-68% improvement',
+    noteClass: 'text-secondary',
+  },
 ]
 
 const orders = [
-  { id: '#ORD-9021 · Eastern Terminal', amount: '340 Units ($14,200)', status: 'DISPATCHED', statusClass: 'text-secondary' },
+  {
+    id: '#ORD-9021 · Eastern Terminal',
+    amount: '340 Units ($14,200)',
+    status: 'DISPATCHED',
+    statusClass: 'text-secondary',
+  },
   { id: '#ORD-9022 · Midwest Hub', amount: '880 Units ($42,150)', status: 'QUEUED', statusClass: 'text-primary' },
 ]
 
@@ -225,7 +248,9 @@ function SecondaryProjectCard({ project }: { project: SecondaryProject }) {
     <article className="bg-surface-container-low rounded-2xl p-6 lg:p-8 flex flex-col justify-between shadow-lg">
       <div>
         <div className="flex items-center justify-between mb-4">
-          <span className={`font-mono-code text-label-caps uppercase ${project.categoryClass}`}>{project.category}</span>
+          <span className={`font-mono-code text-label-caps uppercase ${project.categoryClass}`}>
+            {project.category}
+          </span>
           <span className="px-2.5 py-0.5 rounded bg-surface-container text-xs font-mono-code text-on-surface-variant">
             {project.badge}
           </span>

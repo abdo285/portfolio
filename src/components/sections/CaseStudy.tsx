@@ -57,7 +57,11 @@ const layers = [
 
 export function CaseStudy() {
   return (
-    <section aria-labelledby="case-study-title" className="w-full bg-surface-container-lowest py-20 lg:py-28" id="case-study">
+    <section
+      aria-labelledby="case-study-title"
+      className="w-full bg-surface-container-lowest py-20 lg:py-28"
+      id="case-study"
+    >
       <Container>
         <div className="flex flex-col md:flex-row md:items-end justify-between gap-6 mb-16">
           <div>
@@ -68,7 +72,9 @@ export function CaseStudy() {
           </div>
           <div className="flex items-center gap-3">
             <Tag className="px-3 py-1 bg-surface-container text-on-surface-variant text-xs">CQRS Pattern</Tag>
-            <Tag className="px-3 py-1 bg-surface-container text-on-surface-variant text-xs">Event-Driven Architecture</Tag>
+            <Tag className="px-3 py-1 bg-surface-container text-on-surface-variant text-xs">
+              Event-Driven Architecture
+            </Tag>
           </div>
         </div>
 
@@ -86,7 +92,9 @@ export function CaseStudy() {
 
         <div className="bg-surface-container-low rounded-2xl p-6 lg:p-10 shadow-xl">
           <div className="mb-8">
-            <span className="font-mono-code text-label-caps text-primary uppercase">CLEAN ARCHITECTURE STACK BREAKDOWN</span>
+            <span className="font-mono-code text-label-caps text-primary uppercase">
+              CLEAN ARCHITECTURE STACK BREAKDOWN
+            </span>
             <h3 className="font-headline-md text-headline-md text-on-surface">Layered System Topology</h3>
           </div>
           <ol className="space-y-4">
