@@ -9,8 +9,8 @@ export const site = {
     href: 'https://www.linkedin.com/in/abdalfattah-elbeherey-351744203/',
   },
   github: {
-    label: 'github.com/abdo-elbeherey',
-    href: 'https://github.com/abdo-elbeherey',
+    label: 'github.com/abdo285',
+    href: 'https://github.com/abdo285',
   },
   /** Optional form backend (e.g. Formspree). Falls back to a pre-filled mailto: link. */
   contactEndpoint: import.meta.env.VITE_CONTACT_ENDPOINT as string | undefined,
