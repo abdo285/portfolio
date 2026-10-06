@@ -3,11 +3,10 @@ export const site = {
   fullName: 'Abdalfatah (Abdo) Elbeherey',
   role: 'Full-Stack Developer · .NET · Angular',
   availability: 'Available for Q2 projects',
-  contactEmail: 'abdo.elbeherey.dev@gmail.com',
-  footerEmail: 'contact@abdoelbeherey.dev',
+  contactEmail: 'abdoelbeherey@gmail.com',
   linkedin: {
-    label: 'linkedin.com/in/abdo-elbeherey',
-    href: 'https://www.linkedin.com/in/abdo-elbeherey',
+    label: 'linkedin.com/in/abdalfattah-elbeherey-351744203',
+    href: 'https://www.linkedin.com/in/abdalfattah-elbeherey-351744203/',
   },
   github: {
     label: 'github.com/abdo-elbeherey',
