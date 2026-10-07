@@ -3,27 +3,32 @@ import { Container } from '../Container'
 import { Icon } from '../Icon'
 
 const metrics = [
-  { value: '$12M+', label: 'Transaction Volume', valueClass: 'text-on-surface' },
-  { value: '150k+', label: 'Daily Users', valueClass: 'text-on-surface' },
-  { value: '<50ms', label: 'Median Latency', valueClass: 'text-secondary' },
+  { value: '420+', label: 'Commits Shipped', valueClass: 'text-on-surface' },
+  { value: '252', label: 'On Flagship Platform', valueClass: 'text-on-surface' },
+  { value: '0.3s', label: 'Query Time (was 46s)', valueClass: 'text-secondary' },
 ]
 
 const capabilities = [
-  { icon: 'domain', accent: 'text-primary', title: 'Business Systems', description: 'ERP, CRM & command centers' },
-  { icon: 'dashboard', accent: 'text-tertiary', title: 'Rich Dashboards', description: 'Real-time telemetry & KPIs' },
   {
-    icon: 'shopping_cart',
+    icon: 'domain',
+    accent: 'text-primary',
+    title: 'Business Systems',
+    description: 'Audit, asset & procurement',
+  },
+  { icon: 'dashboard', accent: 'text-tertiary', title: 'Rich Dashboards', description: 'Scores, KPIs & reports' },
+  {
+    icon: 'web',
     accent: 'text-secondary',
-    title: 'B2B E-Commerce',
-    description: 'Tiered pricing & wholesale',
+    title: 'Marketplaces & Booking',
+    description: 'Listings, auctions & scheduling',
   },
   {
     icon: 'lan',
     accent: 'text-primary-fixed',
     title: 'Robust REST APIs',
-    description: 'High-throughput microservices',
+    description: 'Layered .NET Web APIs',
   },
-  { icon: 'bolt', accent: 'text-primary', title: 'Workflow Automation', description: 'Automated invoicing & docs' },
+  { icon: 'bolt', accent: 'text-primary', title: 'Workflow Automation', description: 'Approvals, jobs & PDF reports' },
   { icon: 'security', accent: 'text-tertiary', title: 'Secure Core', description: 'JWT, RBAC & audit logging' },
 ]
 

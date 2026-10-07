@@ -2,14 +2,14 @@ import { Icon } from '../Icon'
 import { TagList } from '../Tag'
 
 const coreStack = [
-  '.NET 8',
-  'Angular 18',
-  'C# Enterprise',
+  'C# / ASP.NET Core',
+  'Angular',
+  'Node.js',
+  'React',
+  'TypeScript',
   'SQL Server',
-  'Clean Architecture',
-  'Entity Framework Core',
+  'PostgreSQL',
   'Redis & SignalR',
-  'Docker',
 ]
 
 type ArchitectureNode = {
@@ -26,51 +26,50 @@ const architectureNodes: ArchitectureNode[] = [
     layer: 'Client Layer',
     icon: 'web',
     accent: 'text-primary',
-    title: 'Angular 18 App',
+    title: 'Angular & React',
     description:
-      'Standalone components, NgRx reactive state tree, OnPush change detection & Tailwind CSS design system.',
+      'Angular portals with PrimeNG and Arabic RTL layouts; React dashboards with TanStack Query and Tailwind CSS.',
     metrics: [
-      ['State:', 'Store Hydrated', 'text-secondary'],
-      ['Bundle:', '148 kB (Gzipped)', 'text-on-surface'],
+      ['Angular:', 'v10 → v18', 'text-secondary'],
+      ['React:', '18 + Vite', 'text-on-surface'],
     ],
   },
   {
     layer: 'Application Services',
     icon: 'api',
     accent: 'text-tertiary',
-    title: '.NET 8 Core Web API',
-    description: 'Clean Architecture with MediatR CQRS handlers, FluentValidation rules, and JWT identity enforcement.',
+    title: '.NET & Node.js APIs',
+    description: 'ASP.NET Core Web APIs with layered services and JWT privilege filters; Express + Zod for lighter services.',
     metrics: [
-      ['Throughput:', '4,200 req/sec', 'text-primary'],
-      ['Serialization:', 'System.Text.Json', 'text-on-surface'],
+      ['Auth:', 'JWT + refresh tokens', 'text-primary'],
+      ['Jobs:', 'Hangfire · BullMQ', 'text-on-surface'],
     ],
   },
   {
     layer: 'Data Layer',
     icon: 'database',
     accent: 'text-secondary',
-    title: 'SQL Server & Redis',
+    title: 'SQL Server, PostgreSQL & Redis',
     description:
-      'EF Core optimized queries, partitioned clustered indexes, distributed caching for hot transactional models.',
+      'EF Core and Prisma models, stored procedures and query tuning — including a hierarchy query cut from 46 s to 0.3 s.',
     metrics: [
-      ['Cache Hit:', '94.6%', 'text-secondary'],
-      ['Query Avg:', '4.8ms', 'text-on-surface'],
+      ['Query fix:', '46s → 0.3s', 'text-secondary'],
+      ['ORMs:', 'EF Core · Prisma', 'text-on-surface'],
     ],
   },
   {
     layer: 'Real-Time Sync',
     icon: 'sync_alt',
     accent: 'text-primary-fixed',
-    title: 'SignalR Hubs',
+    title: 'SignalR & Webhooks',
     description:
-      'Bi-directional WebSockets pushing immediate state recalculations, alerts, and live operational updates.',
+      'Live auction bids and RFID reader events over SignalR hubs; signed webhooks for message delivery status.',
     metrics: [
-      ['Sockets:', 'Connected', 'text-secondary'],
-      ['Sync Delay:', '< 12ms', 'text-on-surface'],
+      ['Hubs:', 'SignalR', 'text-secondary'],
+      ['Webhooks:', 'HMAC-SHA256', 'text-on-surface'],
     ],
   },
 ]
-
 export function Hero() {
   return (
     <section aria-labelledby="hero-title" className="relative w-full overflow-hidden bg-surface py-16 lg:py-24">
@@ -85,7 +84,7 @@ export function Hero() {
       <div className="max-w-7xl mx-auto px-margin-mobile lg:px-margin-desktop relative z-10 flex flex-col items-center">
         <p className="inline-flex items-center gap-2.5 px-3.5 py-1.5 rounded-full bg-surface-container-high/80 text-on-surface-variant font-label-caps text-label-caps uppercase tracking-wider mb-8 shadow-sm">
           <span aria-hidden="true" className="w-2 h-2 rounded-full bg-secondary animate-pulse" />
-          <span>Senior Full-Stack Engineer · .NET 8 &amp; Angular 18</span>
+          <span>Full-Stack Developer · .NET · Angular · Node.js · React</span>
         </p>
 
         <h1
@@ -99,8 +98,8 @@ export function Hero() {
         </h1>
 
         <p className="font-body-lg text-body-lg text-on-surface-variant text-center max-w-2xl mb-8 leading-relaxed">
-          Full-Stack Developer specializing in robust .NET enterprise backends and high-performance Angular frontends.
-          Transforming tangled operational friction into scalable software architectures.
+          Full-stack developer building .NET and Node.js backends with Angular and React frontends — turning operational
+          friction into reliable, maintainable business software.
         </p>
 
         <div className="flex flex-wrap items-center justify-center gap-4 mb-12">
@@ -127,7 +126,7 @@ export function Hero() {
         />
 
         <figure
-          aria-label="Distributed pipeline architecture schematic"
+          aria-label="Typical architecture of the systems I build"
           className="w-full bg-surface-container-lowest rounded-2xl p-6 lg:p-8 shadow-2xl relative overflow-hidden"
         >
           <div className="flex flex-wrap items-center justify-between gap-4 pb-6 mb-8 bg-surface-container-low/50 -mx-6 -mt-6 lg:-mx-8 lg:-mt-8 p-4">
@@ -137,17 +136,17 @@ export function Hero() {
                 <span className="w-3 h-3 rounded-full bg-tertiary-container/70 inline-block" />
                 <span className="w-3 h-3 rounded-full bg-secondary/70 inline-block" />
               </div>
-              <span className="font-mono-code text-mono-code text-outline">DISTRIBUTED_PIPELINE_SCHEMATIC.SYS</span>
+              <span className="font-mono-code text-mono-code text-outline">PRODUCTION_STACK_OVERVIEW.SYS</span>
             </div>
             <div className="flex items-center gap-4 text-xs font-mono-code">
               <span className="flex items-center gap-1.5 text-secondary">
-                <span aria-hidden="true" className="w-1.5 h-1.5 rounded-full bg-secondary animate-ping" /> 99.98% UPTIME
+                <span aria-hidden="true" className="w-1.5 h-1.5 rounded-full bg-secondary animate-ping" /> 6 PRODUCTION SYSTEMS
               </span>
               <span className="text-on-surface-variant">
-                LATENCY: <span className="text-primary font-semibold">32ms</span>
+                STACKS: <span className="text-primary font-semibold">.NET · NODE.JS</span>
               </span>
               <span className="hidden sm:inline text-on-surface-variant">
-                PATTERN: <span className="text-on-surface font-semibold">CQRS &amp; MEDIATR</span>
+                PATTERN: <span className="text-on-surface font-semibold">LAYERED + REPO/UOW</span>
               </span>
             </div>
           </div>
@@ -181,12 +180,12 @@ export function Hero() {
           <figcaption className="mt-6 pt-4 flex flex-wrap items-center justify-between gap-4 text-xs font-mono-code text-outline">
             <div className="flex items-center gap-2">
               <Icon name="verified" className="text-primary text-[16px]" />
-              <span>All systems compiled against .NET 8.0 &amp; Angular 18 standards</span>
+              <span>Drawn from client systems in production</span>
             </div>
             <div className="flex items-center gap-6">
-              <span>PIPELINE: GITHUB_ACTIONS</span>
-              <span>CONTAINER: DOCKER_LINUX</span>
-              <span>HOST: CLOUD_ENTERPRISE</span>
+              <span>PIPELINE: GITLAB_CI · GITHUB_ACTIONS</span>
+              <span>CONTAINER: DOCKER</span>
+              <span>HOST: AZURE_APP_SERVICE</span>
             </div>
           </figcaption>
         </figure>

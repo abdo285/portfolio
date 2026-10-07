@@ -12,6 +12,11 @@ export const site = {
     label: 'github.com/abdo285',
     href: 'https://github.com/abdo285',
   },
+  /** wa.me needs the international number with digits only: country code 20, no leading 0 or "+". */
+  whatsapp: {
+    label: '+20 106 678 9164',
+    href: 'https://wa.me/201066789164',
+  },
   /** Optional form backend (e.g. Formspree). Falls back to a pre-filled mailto: link. */
   contactEndpoint: import.meta.env.VITE_CONTACT_ENDPOINT as string | undefined,
 } as const

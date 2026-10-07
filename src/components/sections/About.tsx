@@ -3,35 +3,35 @@ import { Container } from '../Container'
 import { Eyebrow } from '../SectionHeading'
 
 const stats = [
-  { value: '5+', label: 'Years Dedicated Development', valueClass: 'text-on-surface' },
-  { value: '25+', label: 'Shipped Enterprise Systems', valueClass: 'text-primary' },
-  { value: '100%', label: 'On-Schedule Delivery', valueClass: 'text-secondary' },
+  { value: '6', label: 'Production Systems', valueClass: 'text-on-surface' },
+  { value: '5', label: 'Industries Served', valueClass: 'text-primary' },
+  { value: 'EN/AR', label: 'Bilingual Delivery', valueClass: 'text-secondary' },
 ]
 
 const milestones = [
   {
     step: '01',
     badge: 'bg-surface-container-high text-primary',
-    title: 'Computer Science Foundations',
-    body: 'Core data structures, algorithm complexity analysis, memory models, relational algebra, and discrete mathematics.',
+    title: 'BSc Computer Science · Tanta University (2019–2022)',
+    body: 'Data structures, algorithms, object-oriented programming, databases and networking fundamentals.',
   },
   {
     step: '02',
     badge: 'bg-surface-container-high text-secondary',
-    title: 'Information Technology Institute (ITI)',
-    body: 'Intensive enterprise engineering fellowship. Deep specialization across .NET framework internals, SQL Server optimization, and modern Angular architecture.',
+    title: 'Information Technology Institute (2023–2024)',
+    body: 'Nine-month Professional Web Development & BI track: C#, ASP.NET Core, Angular, SQL Server and BI through team projects.',
   },
   {
     step: '03',
     badge: 'bg-surface-container-high text-tertiary',
-    title: 'Modern Web & API Engineering',
-    body: 'Production delivery of distributed RESTful APIs, decoupled microservices, and reactive web applications handling mission-critical business data.',
+    title: 'GDS Global Data Scientists (2025)',
+    body: 'Full-stack features on 5+ enterprise projects in Agile teams with ASP.NET Core, Angular and SQL Server.',
   },
   {
     step: '04',
     badge: 'bg-primary-container text-on-primary-container',
-    title: 'Full-Stack Solutions & Leadership',
-    body: 'Directing end-to-end software builds: requirements discovery, clean domain modeling, high-throughput delivery, and client team alignment.',
+    title: 'Smarttech Systems & Freelance (2025–now)',
+    body: 'Client platforms for real estate, CX auditing, healthcare, asset management and government supply chains, plus independent Node.js and React work.',
   },
 ]
 

@@ -4,6 +4,7 @@ import { Icon } from './Icon'
 const links = [
   { label: 'GitHub', icon: 'terminal', href: site.github.href, external: true },
   { label: 'LinkedIn', icon: 'share', href: site.linkedin.href, external: true },
+  { label: 'WhatsApp', icon: 'chat', href: site.whatsapp.href, external: true },
   { label: 'Email', icon: 'mail', href: `mailto:${site.contactEmail}`, external: false },
 ]
 

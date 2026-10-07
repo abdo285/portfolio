@@ -17,45 +17,61 @@ type Role = {
 
 const roles: Role[] = [
   {
-    period: '2023 — PRESENT',
+    period: '07/2025 — PRESENT',
     periodClass: 'text-secondary',
-    title: 'Senior Full-Stack Engineer / Technical Lead',
-    company: 'Enterprise Business Solutions',
-    status: 'ACTIVE ROLE',
+    title: '.NET Full-Stack Developer',
+    company: 'Smarttech Systems · Nasr City, Cairo',
+    status: 'CURRENT ROLE',
     statusClass: 'bg-secondary/10 text-secondary',
     summary:
-      'Lead the design and technical execution of multi-tenant enterprise business platforms. Work across .NET 8 backend services and Angular 18 client hubs handling continuous commercial operations.',
+      'Build and maintain client platforms for real estate, customer-experience auditing, healthcare, asset management and government supply chains. I work with UX designers and clients on requirements, deliver features end to end, and support production data and reports.',
     highlights: [
-      'Architected and delivered multi-tenant ERP platform supporting 12,000+ daily active commercial users using .NET 8, CQRS, and Angular.',
-      'Refactored legacy monolithic database queries, slashing median API latency from 480ms down to 45ms through index redesign and Redis caching.',
-      'Mentored junior engineers in Clean Architecture, unit testing practices, and reactive Angular state patterns.',
+      'Emaar MSM Checklist & Project Tracker (.NET 8, Angular 18): most active recent contributor with 252 commits — checklist review with answer history, star-rating questions, reschedule workflow, role dashboards, email templates, Arabic localisation and Excel/PDF exports.',
+      'Momtalakat property marketplace, Oman (.NET 8, Angular 18): 127 commits — add-listing wizard with maps and uploads, national-ID OCR, viewing requests and booking availability, purchase cycle and the admin dashboard.',
+      'Ministry of Health Medical Stores (.NET 6, Angular 10): rewrote a timing-out store-hierarchy query from about 46 s to 0.3 s and fixed duplicate purchase requests, silently lost uploads and stock missed on child stores.',
+      'Smarttech Fixed Assets (.NET 6, Angular 12): remediated penetration-test findings — security-stamp token revocation, server-side workflow transition rules, pagination limits, security headers and regression tests.',
+      'Hlthera telehealth platform (.NET 6, Angular 14/17): healer and health-center onboarding, permissions UI, reports API integration and the appointment calendar.',
     ],
   },
   {
-    period: '2021 — 2023',
+    period: '11/2024 — PRESENT',
     periodClass: 'text-outline',
-    title: 'Full-Stack .NET Developer',
-    company: 'Modern Web Systems',
+    title: 'Full-Stack Developer (Freelance)',
+    company: 'Remote',
+    status: 'FREELANCE',
+    statusClass: 'bg-surface-container text-on-surface-variant',
+    summary:
+      'Independent projects across stacks, from discovery to delivery.',
+    highlights: [
+      'WaveSend: designed and built a WhatsApp Business campaign platform end to end — Node.js/Express API, Prisma and PostgreSQL, a rate-limited BullMQ worker with retries, HMAC-verified Meta webhooks and a React dashboard.',
+      'E-commerce website for Egyptian gemstone rings with Angular, Bootstrap, ASP.NET Core Web API and SQL Server.',
+    ],
+  },
+  {
+    period: '01/2025 — 06/2025',
+    periodClass: 'text-outline',
+    title: '.NET Angular Full-Stack Developer',
+    company: 'GDS Global Data Scientists · Tanta',
     status: 'COMPLETED',
     statusClass: 'bg-surface-container text-on-surface-variant',
     summary:
-      'Engineered enterprise-grade REST APIs, payment webhooks, and administrative portals for client-facing commerce and service teams.',
+      'Delivered full-stack features on 5+ enterprise projects in Agile teams using ASP.NET Core, Angular, Entity Framework, SQL Server, DevExpress and DevExtreme.',
     highlights: [
-      'Engineered 15+ secure REST APIs integrated with external payment providers (Stripe, PayPal) and logistic fulfillment systems.',
-      'Built real-time operational telemetry dashboard using Angular, TypeScript, and SignalR WebSockets for live status feeds.',
-      'Implemented automated CI/CD pipelines via Docker and GitHub Actions, dropping deployment regressions to near-zero.',
+      'Built responsive Angular components integrated with ASP.NET Core REST APIs.',
+      'Found and fixed frontend and backend performance bottlenecks and resolved critical production issues.',
+      'Took part in sprint planning, development and code reviews for on-time delivery.',
     ],
   },
   {
-    period: '2020 — 2021',
+    period: '10/2023 — 08/2024',
     periodClass: 'text-outline',
-    title: 'Software Engineering Fellow',
+    title: 'Professional Web Development & BI Track',
     company: 'Information Technology Institute (ITI)',
-    status: 'HONORS GRADUATION',
+    status: '9-MONTH PROGRAM',
     statusClass: 'bg-surface-container text-on-surface-variant',
     summary:
-      'Rigorous 9-month professional software engineering fellowship covering advanced enterprise architecture, SQL Server database administration, .NET frameworks, and Angular modern web development.',
-    topics: ['Intensive C# Internals', 'SQL Index Tuning', 'Software Design Patterns', 'Team Agile Sprints'],
+      'Intensive full-stack training covering C#, ASP.NET Core, Angular, SQL Server and business intelligence, delivered through team projects.',
+    topics: ['C# & ASP.NET Core', 'Angular', 'SQL Server', 'Business Intelligence', 'Team Projects'],
   },
 ]
 
@@ -68,7 +84,7 @@ export function Experience() {
           accent="secondary"
           eyebrow="TRACK RECORD"
           title="Professional Experience"
-          lead="Proven history delivering production web platforms, guiding architecture decisions, and partnering directly with business stakeholders."
+          lead="Delivering production web platforms for real clients, working directly with designers, stakeholders and end users."
         />
         <ol className="space-y-8">
           {roles.map((role) => (

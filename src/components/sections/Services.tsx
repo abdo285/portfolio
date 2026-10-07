@@ -7,37 +7,29 @@ const services = [
     icon: 'web_stories',
     iconWrap: 'bg-primary/10 text-primary',
     title: 'Custom Web Applications',
-    body: 'Bespoke applications engineered around unique operational models. Built from scratch with .NET 8 and Angular, ensuring scalable architectures that accommodate future growth without painful rewrites.',
-    points: ['Tailored client workflows', 'High-performance single page apps', 'Comprehensive API documentation'],
+    body: 'Applications built around how your team actually works. Usually .NET and Angular, or Node.js and React when that fits better, with architectures that can grow without painful rewrites.',
+    points: ['Tailored client workflows', 'Fast single-page apps', 'Documented, versioned APIs'],
   },
   {
     icon: 'monitoring',
     iconWrap: 'bg-secondary/10 text-secondary',
     title: 'Business Systems & Dashboards',
-    body: 'Transform disjointed spreadsheets and repetitive administrative busywork into consolidated management hubs, live analytics cockpits, and auditable ERP/CRM systems.',
-    points: ['Real-time telemetry via WebSockets', 'Role-based employee security', 'Automated data backups & indexing'],
+    body: 'Replace spreadsheets and manual follow-ups with approval workflows, role-based dashboards and auditable records for operations, procurement, assets and quality teams.',
+    points: ['Real-time updates via SignalR', 'Role & permission-based access', 'Query and index tuning'],
   },
   {
-    icon: 'payments',
+    icon: 'shopping_cart',
     iconWrap: 'bg-tertiary/10 text-tertiary',
-    title: 'B2B E-Commerce & Customer Portals',
-    body: 'High-security self-service client portals, wholesale pricing matrices, automated billing triggers, and seamless payment gateway integrations designed for uninterrupted revenue flows.',
-    points: [
-      'Custom tiered wholesale pricing',
-      'Automated invoice & PDF generation',
-      'Self-service account dashboards',
-    ],
+    title: 'Marketplaces & Customer Portals',
+    body: 'Listing, booking and self-service portals for customers and agents, with bilingual interfaces, maps, document uploads and generated reports.',
+    points: ['Listings, bookings & viewing requests', 'PDF, Excel & printable reports', 'English / Arabic (RTL) interfaces'],
   },
   {
     icon: 'sync',
     iconWrap: 'bg-primary-fixed/10 text-primary-fixed',
     title: 'Integrations & Automation',
-    body: 'Connecting isolated software tools into a unified pipeline. Synchronize your external logistics, CRM, payment processors, and marketing tools via custom Webhooks and background tasks.',
-    points: [
-      'Third-party REST/GraphQL integration',
-      'Automated scheduled recurring jobs',
-      'Resilient retry policies with Polly',
-    ],
+    body: 'Connect the tools your business already uses — messaging, maps, push notifications, identity checks and AI services — through webhooks and background jobs.',
+    points: ['WhatsApp, Firebase, Maps & AI APIs', 'Scheduled and recurring jobs', 'Queued sending with retries & backoff'],
   },
 ]
 
@@ -50,7 +42,7 @@ export function Services() {
           accent="secondary"
           eyebrow="SOLUTIONS FOR BUSINESSES & TEAMS"
           title="From idea to working product."
-          lead="Available for technical contracts, custom digital platforms, and senior engineering roles requiring end-to-end full-stack capabilities."
+          lead="Available for technical contracts, custom digital platforms, and full-time engineering roles requiring end-to-end full-stack capabilities."
         />
         <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
           {services.map((service) => (

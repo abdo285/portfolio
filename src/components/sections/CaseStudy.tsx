@@ -1,59 +1,39 @@
+import { flagshipProject } from '../../content/projects'
 import { Container } from '../Container'
 import { Icon } from '../Icon'
 import { Eyebrow } from '../SectionHeading'
 import { Tag } from '../Tag'
+
+const { caseStudy } = flagshipProject
 
 const diagnostics = [
   {
     icon: 'warning',
     iconWrap: 'bg-error/10 text-error',
     title: 'The Challenge',
-    body: 'A high-growth 3-facility logistics firm relied on disconnected Excel sheets and manual data re-entry. This resulted in an average 4-day shipping backlog, recurrent inventory stock-outs, and untracked inventory ghost discrepancies costing an estimated $32,000 monthly.',
+    body: caseStudy.challenge,
   },
   {
     icon: 'settings_suggest',
     iconWrap: 'bg-primary-container/20 text-primary',
     title: 'The Solution',
-    body: 'Designed and built an event-driven centralized platform utilizing .NET 8 Web API with Clean Architecture principles and an Angular 18 reactive frontend. Integrated SignalR for instant warehouse synchronization and background hosted services for automated reconciliation.',
+    body: caseStudy.solution,
   },
   {
     icon: 'verified',
     iconWrap: 'bg-secondary/10 text-secondary',
     title: 'The Outcome',
-    body: 'Order processing turnaround improved by 68%. Eliminated inventory ghost errors to 0 throughout the next two audited quarters, and saved approximately 120 staff hours every single week through automated document workflows.',
+    body: caseStudy.outcome,
   },
 ]
 
-const layers = [
-  {
-    index: '01',
-    accent: 'text-primary',
-    title: 'Client & Presentation Layer (Angular 18)',
-    body: 'NgRx ComponentStore, standalone route-level guards, typed reactive forms & Tailwind CSS component library',
-    tags: ['RxJS 7.8', 'Tailwind v3'],
-  },
-  {
-    index: '02',
-    accent: 'text-tertiary',
-    title: 'API Gateway & Middleware (.NET 8 Core)',
-    body: 'Global exception handler middleware, rate limiting algorithms, JWT claims extraction & Serilog structured auditing',
-    tags: ['ASP.NET Identity', 'JWT Tokens'],
-  },
-  {
-    index: '03',
-    accent: 'text-secondary',
-    title: 'Application & Domain Core (CQRS Architecture)',
-    body: 'MediatR query/command handlers, FluentValidation pipelines, domain events & state machine logic',
-    tags: ['MediatR 12', 'FluentValidation'],
-  },
-  {
-    index: '04',
-    accent: 'text-primary-fixed',
-    title: 'Data Persistence & Infrastructure (SQL & Redis)',
-    body: 'EF Core with filtered clustered indexes, distributed Redis cache for hot read models & raw Dapper fallback queries',
-    tags: ['SQL Server 2022', 'StackExchange.Redis'],
-  },
-]
+const accents = ['text-primary', 'text-tertiary', 'text-secondary', 'text-primary-fixed']
+
+const layers = caseStudy.layers.map((layer, i) => ({
+  ...layer,
+  index: String(i + 1).padStart(2, '0'),
+  accent: accents[i % accents.length],
+}))
 
 export function CaseStudy() {
   return (
@@ -67,14 +47,15 @@ export function CaseStudy() {
           <div>
             <Eyebrow accent="secondary">ARCHITECTURAL SPECIFICATION</Eyebrow>
             <h2 id="case-study-title" className="font-headline-lg text-headline-lg text-on-surface tracking-tight">
-              Case Study: OmniFlow Internal Engine
+              {caseStudy.title}
             </h2>
           </div>
-          <div className="flex items-center gap-3">
-            <Tag className="px-3 py-1 bg-surface-container text-on-surface-variant text-xs">CQRS Pattern</Tag>
-            <Tag className="px-3 py-1 bg-surface-container text-on-surface-variant text-xs">
-              Event-Driven Architecture
-            </Tag>
+          <div className="flex flex-wrap items-center gap-3">
+            {caseStudy.tags.map((tag) => (
+              <Tag key={tag} className="px-3 py-1 bg-surface-container text-on-surface-variant text-xs">
+                {tag}
+              </Tag>
+            ))}
           </div>
         </div>
 
@@ -93,7 +74,7 @@ export function CaseStudy() {
         <div className="bg-surface-container-low rounded-2xl p-6 lg:p-10 shadow-xl">
           <div className="mb-8">
             <span className="font-mono-code text-label-caps text-primary uppercase">
-              CLEAN ARCHITECTURE STACK BREAKDOWN
+              LAYERED ARCHITECTURE BREAKDOWN
             </span>
             <h3 className="font-headline-md text-headline-md text-on-surface">Layered System Topology</h3>
           </div>

@@ -18,6 +18,15 @@ const channels = [
     external: false,
   },
   {
+    href: site.whatsapp.href,
+    icon: 'chat',
+    iconWrap: 'bg-[#25D366]/10 text-[#25D366]',
+    hover: 'group-hover:text-[#25D366]',
+    label: 'WHATSAPP',
+    value: site.whatsapp.label,
+    external: true,
+  },
+  {
     href: site.linkedin.href,
     icon: 'share',
     iconWrap: 'bg-secondary/10 text-secondary',
@@ -204,7 +213,7 @@ export function Contact() {
                   Have a project or opportunity in mind?
                 </h2>
                 <p className="font-body-md text-body-md text-on-surface-variant mb-8 leading-relaxed">
-                  Whether you&apos;re looking for a Senior Full-Stack Engineer to join your team or need a tailored
+                  Whether you&apos;re looking for a Full-Stack Developer to join your team or need a tailored
                   digital platform built from the ground up, let&apos;s explore how we can work together.
                 </p>
                 <ul className="space-y-4 mb-8">

@@ -1,3 +1,4 @@
+import { BackToTop } from './components/BackToTop'
 import { SiteFooter } from './components/SiteFooter'
 import { SiteHeader } from './components/SiteHeader'
 import { About } from './components/sections/About'
@@ -36,6 +37,7 @@ export default function App() {
         </div>
       </main>
       <SiteFooter />
+      <BackToTop />
     </>
   )
 }
